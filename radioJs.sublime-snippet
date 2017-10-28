@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+function valueElementForm(nameElement) {
+	var newNameElement = '.' + nameElement;
+		element = \$(newNameElement);
+	element.each(function(index, el) {
+		var elementInput = \$(this).find(\$('input')),
+			elementLabel = \$(this).find(\$('label')),
+			elementValue = index + 1;
+		elementInput.attr('id', nameElement + '-' + elementValue);
+		elementLabel.attr('for', nameElement + '-' + elementValue);
+	});
+	
+}
+valueElementForm('${1:radio}');
+$2
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>radio</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
