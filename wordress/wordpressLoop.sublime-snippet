@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<?php \$loop = new WP_Query( array( 'post_type' => '$1', 'posts_per_page' => 0 ) ); ?> 
+<?php while ( \$loop->have_posts() ) : \$loop->the_post(); ?> 
+	$2
+<?php endwhile; ?>
+<?php wp_reset_query();?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wploop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, embedding.php</scope>
+</snippet>
