@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<?php \$image = get_field('$1'); if( !empty(\$image) ): ?><img src="<?php echo \$image['url']; ?>" alt="<?php echo \$image['alt']; ?>" /><?php endif; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>acfi</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, embedding.php</scope>
+</snippet>
