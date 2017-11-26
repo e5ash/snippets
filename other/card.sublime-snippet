@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Карта (Сбербанк) – 4817 7600 2289 6017 (Войценко Юлия А.)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>card</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <!-- <scope>source.python</scope> -->
+</snippet>

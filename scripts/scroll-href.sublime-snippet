@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+\$('${1:.panel__nav a}').click(function (event) {
+	var id  = \$(this).attr('href');
+	if(id.charAt(0) == '#'){
+		event.preventDefault();
+		var top = \$(id).offset().top;
+		\$('body,html').animate({scrollTop: top}, 1000);
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sh</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
