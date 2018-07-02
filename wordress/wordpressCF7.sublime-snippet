@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+function mycustom_wp_footer() {
+?>
+<script type="text/javascript">
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+    if ( '132' == event.detail.contactFormId ) {
+      \$.fancybox.close();
+      \$.fancybox.open({src  : '#popup-thanks',type : 'inline'});
+    }
+}, false );
+</script>
+<?php
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cf7</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
